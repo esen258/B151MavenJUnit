@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class C05_Assertion {
-
+//NABER
     // 4 tane test methodu olusturun
 
     // test01
