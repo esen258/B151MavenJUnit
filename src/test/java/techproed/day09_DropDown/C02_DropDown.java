@@ -35,7 +35,7 @@ public class C02_DropDown {
 
     @After
     public void tearDown() throws Exception {
-        // driver.close();
+         driver.close();
     }
 
     @Test
@@ -55,8 +55,6 @@ public class C02_DropDown {
 
         //select.selectByValue("AZ");
         select.selectByVisibleText("Arizona");
-
-
 
 
         // Select a State Dropdown'undan son secilen option'un "Arizona" oldugunu test ediniz

@@ -1,5 +1,4 @@
 package techproed.day09_DropDown;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Before;
@@ -9,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-
 import java.time.Duration;
 
 public class C01_DropDown {
@@ -26,12 +24,13 @@ public class C01_DropDown {
 
    3-) Opsiyonlardan bir tanesi secilir
    -selectByVisibleText() ==> option'a görünür metin ile ulasmak icin kullanılır
-   -selectByIndex() ==> optin'a ındex ile ulasmak icin kullanılır. (index 0 baslar)
+   -selectByIndex() ==> option'a ındex ile ulasmak icin kullanılır. (index 0 baslar)
    -selectByValue() ==> option'a value ile ulasmak icin kullanılır
 
      */
 
     WebDriver driver;
+
 
     @Before
     public void setUp() throws Exception {
@@ -57,6 +56,7 @@ public class C01_DropDown {
         WebElement ddmYil = driver.findElement(By.xpath("//select[@id='year']"));
 
         Select select = new Select(ddmYil);
+
 
         //DropDown 3 adımda handle edilir
 
