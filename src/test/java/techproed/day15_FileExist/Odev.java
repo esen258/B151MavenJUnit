@@ -1,4 +1,4 @@
-package techproed.day_15_FileExist;
+package techproed.day15_FileExist;
 
 import org.junit.Test;
 import org.openqa.selenium.By;

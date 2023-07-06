@@ -1,4 +1,4 @@
-package techproed.day_16_SeleniumWait;
+package techproed.day16_SeleniumWait;
 
 import org.junit.Test;
 import org.openqa.selenium.By;

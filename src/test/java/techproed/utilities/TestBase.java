@@ -195,4 +195,49 @@ import java.util.List;
         extentHtmlReporter.config().setDocumentTitle("Extent Report");
         extentHtmlReporter.config().setReportName(reportName);
     }
+        // JSClick Method
+        public void click(WebElement element){
+            try {
+                element.click();
+            } catch (Exception e) {
+                JavascriptExecutor js = (JavascriptExecutor) driver;
+                js.executeScript("arguments[0].click();",element);
+            }
+        }
+        //JS Scroll
+        public void scroll(WebElement element){
+
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].scrollIntoView(true);",element);
+
+
+        }
+        //JS Scroll Home
+        public void scrollHome(){
+
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("window.scrollTo(0,-document.body.scrollHeight)");
+
+        }
+        //JS Scroll End
+        public void scrollEnd(){
+
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+
+        }
+        //JS Send Keys
+        public void sendKeysJS(WebElement element, String text){
+
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].value='"+text+"'",element);
+
+        }
+        //JS Send Keys 2.Yol
+        public void sendAttributeJS(WebElement element, String text){
+
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].setAttribute('value','"+text+"')",element);
+        }
+
 }

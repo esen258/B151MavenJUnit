@@ -1,4 +1,4 @@
-package techproed.day_17_Exception;
+package techproed.day17_Exception;
 
 import com.github.javafaker.Faker;
 import org.junit.Test;
